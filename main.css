@@ -2,7 +2,7 @@
 a,
 a:focus,
 a:hover {
-  color: #454545;
+  color: #ffffff;
 }
 
 /* Custom default button */
@@ -14,28 +14,31 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-body{
-  font-size: 1em;
-  color: #000000;
+body {
+  background-color: #7a7a7a;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
           /*header*/
+
 .masthead{
   width: 100%;
   position: absolute;
+  top:0;
 }
 .masthead>.inner{
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 20px 0;
 }
 .masthead-brand{
   float: left;
-  font-size: 2.5em;
-  line-height: 1.8;
-  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.6;
   margin: 0;
-  color: #d2d2d2;
-  color: rgba(210, 210, 210, 0.95);
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
 }
 .masthead-nav{
   float: right;
@@ -47,24 +50,23 @@ body{
   padding-right: 0;
 }
 .masthead-nav > li > a {
-  font-size: 1.6em;
-  line-height: 1.8;
-  font-weight: bold;
-  color: #d2d2d2;
-  color: rgba(210, 210, 210, 0.95);
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: #ffffff;
+  border-bottom-color: rgba(241, 241, 241, 0.25);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #d2d2d2;
-  border-bottom-color: #d2d2d2;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
          /*main page*/
@@ -72,9 +74,8 @@ body{
   position: fixed;
   z-index: -2;
   width: 100%;
-
   background-color: #d2d2d2;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
@@ -83,7 +84,7 @@ body{
 .site-wrapper_inner{
   width: 60%;
   margin: 0 auto;
-  padding: 5em;
+  padding: 3em;
 }
 .mainpage {
   background: url("img/1.jpg") no-repeat center center;
@@ -106,3 +107,17 @@ body{
 }
 
      /*footer*/
+footer{
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.footer_inner{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
