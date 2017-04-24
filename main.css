@@ -62,7 +62,8 @@ body {
 }
 .masthead-nav > li > a {
   font-size: 1.2em;
-  line-height: 1.6;
+  padding: 0;
+  margin: .6em .8em;
   color: #ffffff;
   color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid transparent;
@@ -72,7 +73,7 @@ body {
   color: #f21a1f;
   background-color: transparent;
   border-bottom-color: #ffffff;
-  border-bottom-color: rgba(241, 241, 241, 0.25);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -189,6 +190,7 @@ footer{
 @media (max-width: 790px) {
   .site-wrapper_inner{
     max-width: 600px;
+    margin-top: 3.2em ;
   }
   .masthead_inner {
     display: none;
@@ -198,7 +200,6 @@ footer{
   }
   .portfolio_group{
     max-width: 300px;
-    margin-top: 3em ;
   }
 }
 
