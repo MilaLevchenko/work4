@@ -1,0 +1,69 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #454545;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+body{
+  font-size: 1em;
+  color: #000000;
+}
+          /*header*/
+.masthead{
+  width: 100%;
+}
+.masthead>.inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.masthead-brand{
+  float: left;
+  font-size: 2.5em;
+  line-height: 1.8;
+  font-weight: bold;
+  margin: 0;
+  color: #d2d2d2;
+  color: rgba(210, 210, 210, 0.95);
+}
+.masthead-nav{
+  float: right;
+}
+.masthead-nav>li{
+  float: left;
+}
+.masthead-nav > li:last-child a {
+  padding-right: 0;
+}
+.masthead-nav > li > a {
+  font-size: 1.6em;
+  line-height: 1.8;
+  font-weight: bold;
+  color: #d2d2d2;
+  color: rgba(210, 210, 210, 0.95);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #d2d2d2;
+  border-bottom-color: #d2d2d2;
+}
+
+         /*main page*/
