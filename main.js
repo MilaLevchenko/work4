@@ -27,7 +27,14 @@ $( document ).ready(function() {
     }
   }
 
-
+  $('.main-box').owlCarousel({
+    loop:true,
+    nav: true,
+    navText: ['<i class=" fa fa-chevron-left"></i>','<i class=" fa fa-chevron-right"></i>'],
+    autoplay: true,
+    autoplayTimeout: 4000,
+    items: 1
+  });
 
 
 
@@ -41,7 +48,7 @@ $( document ).ready(function() {
       }
   );
 
-  $('.owl-carousel').owlCarousel({
+  $('.team-box').owlCarousel({
     loop:true,
     dotsEach: true,
     autoplay: true,
