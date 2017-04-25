@@ -8,6 +8,10 @@ a,
 a:focus,
 a:hover {
   color: #ffffff;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
 }
 
 /* Custom default button */
@@ -43,26 +47,29 @@ body {
   display: block;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 20px 0;
 }
-.masthead-brand{
+.logo{
   float: left;
   font-size: 2em;
-  line-height: 1.6;
+  line-height: 2.4;
   margin: 0;
   color: #ffffff;
   color: rgba(255, 255, 255, 0.95);
 }
-.masthead-nav{
+
+         /*nav-bg*/
+
+.nav-bg-list{
   float: right;
+  margin: 1.8em 0 0;
 }
-.masthead-nav>li{
+.nav-bg-list>li{
   float: left;
 }
-.masthead-nav > li:last-child a {
-  padding-right: 0;
+.nav-bg-list > li:last-child a {
+  margin-right: 0;
 }
-.masthead-nav > li > a {
+.nav-bg-list > li > a {
   font-size: 1.2em;
   padding: 0;
   margin: .6em .8em;
@@ -70,42 +77,127 @@ body {
   color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid transparent;
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
+.nav-bg-list > li > a:hover,
+.nav-bg-list > li > a:focus {
   color: #f21a1f;
   background-color: transparent;
   border-bottom-color: #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.65);
 }
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
+.nav-bg-list > .active > a,
+.nav-bg-list > .active > a:hover,
+.nav-bg-list > .active > a:focus {
   color: #f21a1f;
   border-bottom-color: #ffffff;
 }
-.masthead_inner_small{
+
+       /*nav-small*/
+.nav-small.is-closed {
   display: none;
-  font-size: 1.2em;
-  background-color: rgba(0, 0, 0, 0.58);
-  text-align: center;
 }
-.masthead_inner_small h3{
+.nav-small.is-open{
   display: block;
+  position: absolute;
+  top:99.99%;
+  left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-transition: height .2s ease;
+  transition: height .2s ease;
 }
-.masthead-nav_small li{
+
+.nav-small.is-open .nav-small-list li{
   width: 50%;
   float: left;
+  font-size: 1.2em;
+  line-height: 3;
+  text-align: center;
   font-weight: bold;
 }
-.nav.masthead-nav_small a:hover,
-.nav.masthead-nav_small a:visited,
-.masthead-nav_small a:focus {
+.nav-small.is-open .nav-small-list li a{
+  display: block;
+}
+.nav-small.is-open .nav-small-list a:hover,
+.nav-small.is-open .nav-small-list a:visited,
+.nav-small.is-open .nav-small-list a:focus {
   background-color: rgb(122, 122, 122);
 }
-.nav.masthead-nav_small li.active {
+.nav-small.is-open .nav-small-list li.active {
   background-color: rgba(203, 26, 30, 0.94);
 }
+
+         /*hamburger*/
+
+.hamburger{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 32px;
+  height: 32px;
+  margin-top: 11px;
+  margin-right: 15px;
+  background: transparent;
+  border: none;
+}
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+  outline: none;
+}
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+.hamburger .hamb-top,
+.hamburger .hamb-middle,
+.hamburger .hamb-bottom {
+  background-color: #ffffff;
+}
+.hamburger.is-closed .hamb-top {
+  top: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed .hamb-middle {
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger.is-closed .hamb-bottom {
+  bottom: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+.hamburger.is-closed:hover .hamb-top {
+  top: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed:hover .hamb-bottom {
+  bottom: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger.is-open .hamb-top {
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+.hamburger.is-open .hamb-middle { display: none; }
+.hamburger.is-open .hamb-bottom {
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+
 
          /*site-wrapper*/
 .site-wrapper {
@@ -249,10 +341,14 @@ footer{
     max-width: 600px;
     padding-top: 3.2em ;
   }
-  .masthead_inner {
+  .logo{
+    line-height: 2;
+    margin-left: 15px;
+  }
+  .nav-bg {
     display: none;
   }
-  .masthead_inner_small{
+  .hamburger {
     display: block;
   }
   .portfolio_group{
