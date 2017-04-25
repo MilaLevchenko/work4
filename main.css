@@ -209,6 +209,45 @@ body {
   margin: 0 auto;
   padding: 2em 0;
 }
+.main-box {
+  color: #fff;
+  background-color: #8f8f8f;
+  text-align: center;
+  padding-top: 0.8em;
+}
+.main-box_item{
+  padding: 12em 0;
+}
+.about {
+  background: url("img/owl_1.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.work{
+  background: url("img/owl_4.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.team{
+  background: url("img/owl_3.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.main-box .h-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.main-box .h-table .h-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.main_item_content {
+  width: 60%;
+  margin: auto;
+}
+.main-box_item .main_item_text {
+  font-size: 18px;
+  color: #fff;
+}
+
 
 
      /*footer*/

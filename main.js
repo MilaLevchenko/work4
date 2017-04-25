@@ -30,7 +30,7 @@ $( document ).ready(function() {
   $('.main-box').owlCarousel({
     loop:true,
     nav: true,
-    navText: ['<i class=" fa fa-chevron-left"></i>','<i class=" fa fa-chevron-right"></i>'],
+    dotsEach: true,
     autoplay: true,
     autoplayTimeout: 4000,
     items: 1
@@ -52,7 +52,7 @@ $( document ).ready(function() {
     loop:true,
     dotsEach: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
     responsive:{
       0:{
         items:1
