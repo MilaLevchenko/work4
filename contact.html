@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site7</title>
+  <title>Design Planet</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link href="main.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 
 <header class="masthead">
   <div class="masthead_inner clearfix">
-    <h3  class="logo"><a href="index.html">Design Planet</a></h3>
+    <h3 class="logo"><a href="index.html">Design Planet</a></h3>
 
     <div class="nav-bg clearfix">
       <ul class="nav-bg-list">
@@ -68,12 +69,43 @@
 <div class="site-wrapper">
   <div class="site-wrapper_inner">
 
-      <div class="row-fluid">
-        <div class="span8">
-          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.536575106218!2d30.312365651384916!3d59.93983168178765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493067932088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <form id="ContactForm" class="form form-project" name='adminForm'>
+
+      <div class="form_header clearfix">
+        <i class="form_icon fa fa-envelope-o fa-2x"></i>
+
+        <div class="form_title">Let us build your project!</div>
+        <div class="form_dscr">Fill the form</div>
+      </div>
+
+      <div class="form_part clearfix">
+        <div class="form_item mod-name">
+          <input name='f_name' type='text' maxlength='255' size='50' class='validate form_field' placeholder='Представьтесь, пожалуйста' value=''/>
+        </div>
+        <div class="form_item mod-email">
+          <input name='f_email' type='text' maxlength='255' size='50' class='validate form_field' placeholder='E-mail' data-format='email' value=''/>
+        </div>
+        <div class="form_item mod-phone">
+          <input name='f_phone' type='text' maxlength='255' size='50' class='form_field' placeholder='Телефон' value=''/>
+        </div>
+        <div class="form_item mod-about">
+          <textarea class="validate form_field mod-textarea" placeholder="Расскажите немного о проекте" cols="60" rows="5" name="f_description"></textarea>
+        </div>
+      </div>
+
+      <div class="form_btn">
+        <button class="btn submit">Оформить заявку</button>
+      </div>
+    </form>
+
+    <div class="row-fluid">
+      <div class="span8">
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.536575106218!2d30.312365651384916!3d59.93983168178765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493067932088"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         <div class="span4">
-          <h2>Contacts:</h2>
+          <h4>Contact:</h4>
           <address>
             <strong>Design Planet</strong><br>
             Россия<br>
@@ -84,7 +116,7 @@
         </div>
       </div>
 
-  </div>
+    </div>
   </div>
 </div>
 

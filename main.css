@@ -29,8 +29,8 @@ ul{
   color: #ffffff;
 }
 body {
-  background-color: #3150d1;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   min-width: 350px;
 }
 
@@ -297,9 +297,10 @@ body {
 
 .main_text {
   text-align: center;
-  margin: 3em 8em;
+  padding: 3em 8em;
 }
-.btn_box {
+.btn_box,
+.form_btn {
   text-align: center;
   margin: 2em;
 }
@@ -352,18 +353,30 @@ footer{
 }
 
              /*team*/
-.team_article {
+.team_article,
+.main_article {
+  padding: 5em 10em;
+  text-align: center;
+  color: #fff;
+
+}
+.team_article{
   background: url("img/bg.png") center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 5em 10em;
-  text-align: center;
 }
-.team_article h3{
+.main_article {
+  background: url("img/owl_3.png") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.team_article h3,
+.main_article h3 {
   font-size: 2.6em;
   line-height: 2;
 }
-.team_article p{
+.team_article p,
+.main_article p{
   font-size: 1.8em;
   line-height: 1.2;
   padding-top: 1.2em;
@@ -405,6 +418,84 @@ footer{
   margin-bottom: 3em;
 }
 
+/*contact*/
+.form-project {
+  position: relative;
+  width: 750px;
+  margin: 0 auto 5em;
+  padding: 38px 85px 46px;
+  color: #232323;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 30px rgba(83, 83, 83, 0.61);
+}
+.form-project .form_icon {
+  float: left;
+  margin-top: .2em;
+}
+.form-project .form_title {
+  text-align: left;
+  font-size: 26px;
+  padding-left: 82px;
+}
+.form-project .form_dscr {
+  max-width: none;
+  margin-top: 29px;
+  color: #a8a9c6;
+  font-size: 16px;
+  text-align: center;
+}
+.form-project .form_part {
+  margin-top: 28px;
+}
+.form-project .form_item.mod-about,
+.form-project .form_item.mod-attached-files,
+.form-project .form_item.mod-name {
+  width: 100%;
+}
+.form-project .form_item {
+  float: left;
+  position: relative;
+}
+.form_item:first-child {
+  margin-top: 0;
+}
+.form_field {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 6px 18px;
+  border: 1px solid #ebebeb;
+  font: 400 14px proxima-nova-regular-italic,Arial,"Nimbus Sans L",Helvetica,sans-serif;
+  color: #a4a4a4;
+  border-radius: 5px;
+  -webkit-transition-property: color,border-color;
+  transition-property: color,border-color;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  vertical-align: middle;
+}
+.form-project .form_item.mod-about,
+.form-project .form_item.mod-email,
+.form-project .form_item.mod-phone {
+  margin-top: 15px;
+}
+.form-project .form_item.mod-email,
+.form-project .form_item.mod-phone{
+  width: 46%;
+}
+.form-project .form_item.mod-phone {
+  margin-left: 3.2em;
+}
+.form-project .form_field.mod-textarea {
+  height: 108px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  resize: none;
+}
 
           /*media*/
 @media (max-width: 1199px) {
@@ -420,13 +511,14 @@ footer{
   .footer_inner{
     max-width: 750px;
   }
-  .portfolio_group{
-    max-width: 630px;
+  .form-project{
+    padding: 2em 1em;
+    width: 650px;
   }
 }
 @media (max-width: 790px) {
   .site-wrapper_inner{
-    max-width: 600px;
+    max-width: 620px;
     padding-top: 3.2em ;
   }
   .logo{
@@ -442,24 +534,40 @@ footer{
   .main-box_item{
     padding: 5em 0;
   }
-  .portfolio_group{
-    max-width: 300px;
+  .main_text {
+    padding: 0 0 2em;
   }
-  .portfolio_item:first-child {
-    margin-top:0;
-  }
+
   .hide_dscr {
     display: none;
   }
-  .team_article{
-    padding: 2em 2em;
+  .team_article,
+  .main_article {
+    padding: 2em;
   }
-  .team_article h3{
+  .team_article h3,
+  .main_article h3{
     font-size: 2em;
     line-height: 1.2;
   }
   .about_team{
     padding: 0 2em;
+  }
+  .portfolio_group{
+    max-width: 600px;
+  }
+  .form-project{
+    padding: 2em;
+    width: 500px;
+    box-shadow: none;
+    margin: 0 auto 2em;
+  }
+  .form-project .form_item.mod-email,
+  .form-project .form_item.mod-phone{
+    width: 100%;
+  }
+  .form-project .form_item.mod-phone{
+    margin-left: 0;
   }
 }
 @media (max-width: 670px) {
@@ -473,6 +581,12 @@ footer{
   }
   .main-box_item{
     padding: 2em 0;
+  }
+  .portfolio_group{
+    max-width: 300px;
+  }
+  .portfolio_item:first-child {
+    margin-top:0;
   }
 }
 @media (max-width: 550px) {
