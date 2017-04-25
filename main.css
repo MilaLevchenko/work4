@@ -515,6 +515,9 @@ footer{
     padding: 2em 1em;
     width: 650px;
   }
+  .portfolio_group{
+    max-width: 616px;
+  }
 }
 @media (max-width: 790px) {
   .site-wrapper_inner{
@@ -552,9 +555,6 @@ footer{
   }
   .about_team{
     padding: 0 2em;
-  }
-  .portfolio_group{
-    max-width: 600px;
   }
   .form-project{
     padding: 2em;
