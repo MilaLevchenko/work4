@@ -26,6 +26,7 @@ a:hover {
 }
 body {
   background-color: #3150d1;
+  color: #ffffff;
 }
 
           /*header*/
@@ -97,7 +98,11 @@ body {
   font-weight: bold;
 }
 .nav.masthead-nav_small a:hover,
+.nav.masthead-nav_small a:visited,
 .masthead-nav_small a:focus {
+  background-color: rgb(142, 26, 29);
+}
+.nav.masthead-nav_small li.active {
   background-color: rgba(203, 26, 30, 0.94);
 }
 
@@ -167,7 +172,56 @@ footer{
   z-index:99;
 }
 
+/*team*/
+.team_article {
+  background: url("img/bg.png") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5em 10em;
+  text-align: center;
+}
+.team_article h3{
+  font-size: 2.6em;
+  line-height: 2;
+}
+.team_article p{
+  font-size: 1.8em;
+  line-height: 1.2;
+  padding-top: 1.2em;
+}
+.about_team {
+  text-align: center;
+  padding: 3em 5em;
+}
 
+.team-box .owl-dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 1em;
+}
+.team-box .owl-dot {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  margin-right: 6px;
+  margin-left: 6px;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+}
+
+.team-box .owl-dot.active {
+  background-color: #fff;
+}
 
 /*media*/
 @media (max-width: 1199px) {
