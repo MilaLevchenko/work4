@@ -27,6 +27,7 @@ a:hover {
 body {
   background-color: #3150d1;
   color: #ffffff;
+  min-width: 350px;
 }
 
           /*header*/
@@ -74,7 +75,7 @@ body {
   color: #f21a1f;
   background-color: transparent;
   border-bottom-color: #ffffff;
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.65);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -100,7 +101,7 @@ body {
 .nav.masthead-nav_small a:hover,
 .nav.masthead-nav_small a:visited,
 .masthead-nav_small a:focus {
-  background-color: rgb(142, 26, 29);
+  background-color: rgb(122, 122, 122);
 }
 .nav.masthead-nav_small li.active {
   background-color: rgba(203, 26, 30, 0.94);
@@ -279,7 +280,8 @@ footer{
 }
 
 
-@media (max-width: 300px) {
+/*@media (max-width: 300px) {
+
   p.lead {
     display: none;
   }
@@ -289,5 +291,5 @@ footer{
   .site-wrapper_inner {
     max-width: 290px;
   }
-}
+}*/
 
