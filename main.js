@@ -30,13 +30,12 @@ $( document ).ready(function() {
   $('.main-box').owlCarousel({
     loop:true,
     nav: true,
+    navText: ['<i class="fa fa-angle-left fa-5x"></i>','<i class="fa fa-angle-right fa-5x"></i>'],
     dotsEach: true,
     autoplay: true,
     autoplayTimeout: 4000,
     items: 1
   });
-
-
 
 
   $('.portfolio_item').hover(
@@ -68,8 +67,6 @@ $( document ).ready(function() {
       }
     }
   })
-
-
 
 });
 
