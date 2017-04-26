@@ -136,10 +136,10 @@ body {
   top: 0;
   right: 0;
   z-index: 999;
-  width: 32px;
-  height: 32px;
-  margin-top: 11px;
-  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+  margin-top: .7em;
+  margin-right: 1.4em;
   background: transparent;
   border: none;
 }
@@ -156,7 +156,7 @@ body {
 .hamburger.is-open .hamb-bottom {
   position: absolute;
   left: 0;
-  height: 3px;
+  height: 2px;
   width: 100%;
 }
 .hamburger .hamb-top,
@@ -165,24 +165,15 @@ body {
   background-color: #ffffff;
 }
 .hamburger.is-closed .hamb-top {
-  top: 5px;
+  top: 4px;
   -webkit-transition: all .35s ease-in-out;
 }
 .hamburger.is-closed .hamb-middle {
   top: 50%;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 .hamburger.is-closed .hamb-bottom {
-  bottom: 5px;
-  -webkit-transition: all .35s ease-in-out;
-}
-
-.hamburger.is-closed:hover .hamb-top {
-  top: 0;
-  -webkit-transition: all .35s ease-in-out;
-}
-.hamburger.is-closed:hover .hamb-bottom {
-  bottom: 0;
+  bottom: 4px;
   -webkit-transition: all .35s ease-in-out;
 }
 .hamburger.is-open .hamb-top,
@@ -534,8 +525,9 @@ address a:hover {
     padding-top: 3.2em ;
   }
   .logo{
+    font-size: 1.6em;
     line-height: 2;
-    margin-left: 15px;
+    margin-left: .6em;
   }
   .nav-bg {
     display: none;
@@ -543,13 +535,15 @@ address a:hover {
   .hamburger {
     display: block;
   }
+  .site-wrapper {
+    margin-top: 3em;
+  }
   .main-box_item{
     padding: 5em 0;
   }
   .main_text {
     padding: 0 0 2em;
   }
-
   .hide_dscr {
     display: none;
   }
