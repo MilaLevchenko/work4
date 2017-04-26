@@ -344,7 +344,7 @@ footer{
   position:absolute;
   top:0;
   left:0;
-  background: rgba(0, 0, 0, 0.54);
+  background: rgba(0, 0, 0, 0.36);
   width:100%;
   height:100%;
   padding: 6em 0;
@@ -354,7 +354,6 @@ footer{
 }
 .portfolio_item:hover .portfolio_item_dscr {
   opacity: 1;
-  transition: opacity .9s;
 }
 
              /*team*/
@@ -597,6 +596,9 @@ address a:hover {
   }
   .portfolio_item:first-child {
     margin-top:0;
+  }
+  .portfolio_item_dscr {
+    opacity: 1;
   }
 }
 @media (max-width: 550px) {
