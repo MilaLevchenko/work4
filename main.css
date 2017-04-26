@@ -201,7 +201,7 @@ body {
 
          /*site-wrapper*/
 .site-wrapper {
-  margin-top: 3.2em;
+  margin-top: 4em;
   width: 100%;
 }
 .site-wrapper_inner{
@@ -216,7 +216,6 @@ body {
   color: #fff;
   background-color: #8f8f8f;
   text-align: center;
-  padding-top: 0.8em;
 }
 .main-box_item{
   padding: 12em 0;
@@ -593,13 +592,33 @@ footer{
   .site-wrapper_inner {
     max-width: 350px;
   }
+  .form-project{
+    padding: 1em;
+    width: 350px;
+    margin: 0 auto 1em;
+  }
+  .form-project .form_icon {
+    display: none;
+  }
+  .form-project .form_title {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 @media (max-width: 450px) {
   .site-wrapper_inner {
-    max-width: 320px;
+    max-width: 360px;
   }
   .site-wrapper_inner .lead {
     margin: 3em 2em;
+  }
+  .form-project{
+    padding: 1em;
+    width: 350px;
+    margin: 0 auto 1em;
+  }
+  .maps {
+    margin: 0 1.4em;
   }
 }
 
