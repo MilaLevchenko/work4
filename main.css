@@ -511,7 +511,22 @@ address a:hover {
   color: #000000;
   text-decoration: none;
 }
-          /*media*/
+.toTop{
+  position: fixed;
+  bottom: 2em;
+  right: 2.5em;
+  cursor: pointer;
+  display: none;
+  color: #FFFFFF;
+  transition: color .3s linear;
+}
+.toTop:hover {
+  color: #bb191d;
+}
+
+
+
+/*media*/
 @media (max-width: 1199px) {
   .masthead_inner,
   .site-wrapper_inner,
@@ -593,6 +608,8 @@ address a:hover {
     margin-left: 0;
   }
 }
+
+
 @media (max-width: 670px) {
   .site-wrapper_inner {
     max-width: 500px;
