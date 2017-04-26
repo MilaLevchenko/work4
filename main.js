@@ -36,7 +36,7 @@ $( document ).ready(function() {
     autoplayTimeout: 4000,
     items: 1
   });
-  
+
   $('.team-box').owlCarousel({
     loop:true,
     dotsEach: true,

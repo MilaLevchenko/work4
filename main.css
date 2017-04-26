@@ -76,19 +76,21 @@ body {
   color: #ffffff;
   color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid transparent;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
 }
 .nav-bg-list > li > a:hover,
 .nav-bg-list > li > a:focus {
   color: #f21a1f;
   background-color: transparent;
-  border-bottom-color: #ffffff;
-  border-bottom-color: rgba(255, 255, 255, 0.65);
 }
 .nav-bg-list > .active > a,
 .nav-bg-list > .active > a:hover,
 .nav-bg-list > .active > a:focus {
   color: #f21a1f;
-  border-bottom-color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 1);
 }
 
        /*nav-small*/
