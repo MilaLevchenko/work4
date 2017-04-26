@@ -27,6 +27,21 @@ $( document ).ready(function() {
     }
   }
 
+  var portfolio = $('.portfolio_item');
+  var portfolioDscr = $('.portfolio_item_dscr');
+
+  portfolio.click(function () {
+
+    if (isClosed == true) {
+      portfolioDscr.removeClass('is-open');
+      isClosed = false;
+    } else {
+      portfolioDscr.addClass('is-open');
+      isClosed = true;
+    }
+  });
+
+
   $('.main-box').owlCarousel({
     loop:true,
     nav: true,

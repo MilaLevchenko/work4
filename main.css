@@ -354,6 +354,7 @@ footer{
 }
 .portfolio_item:hover .portfolio_item_dscr {
   opacity: 1;
+  transition: opacity .9s;
 }
 
              /*team*/
