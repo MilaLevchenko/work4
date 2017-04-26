@@ -40,6 +40,23 @@ $( document ).ready(function() {
       isClosed = true;
     }
   });
+  
+  var showMore = $('.portfolio_btn');
+  var portfolioHide = $('.addmore');
+  IsHiden = true;
+
+  showMore.click(function () {
+    if (IsHiden == false) {
+      portfolioHide.hide();
+      showMore.text("Show more");
+      IsHiden = true;
+    }
+    else {
+      portfolioHide.show();
+      showMore.text("Show less");
+      IsHiden = false;
+    }
+  });
 
 
   $('.main-box').owlCarousel({
@@ -71,7 +88,7 @@ $( document ).ready(function() {
         items:5
       }
     }
-  })
+  });
 
 });
 
