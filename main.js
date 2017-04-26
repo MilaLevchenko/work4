@@ -40,7 +40,7 @@ $( document ).ready(function() {
       isClosed = true;
     }
   });
-  
+
   var showMore = $('.portfolio_btn');
   var portfolioHide = $('.addmore');
   IsHiden = true;
