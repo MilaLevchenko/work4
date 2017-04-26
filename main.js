@@ -36,17 +36,7 @@ $( document ).ready(function() {
     autoplayTimeout: 4000,
     items: 1
   });
-
-
-  $('.portfolio_item').hover(
-      function(){
-        $(this).find('.portfolio_item_dscr').slideDown(350); //.fadeIn(250)
-      },
-      function(){
-        $(this).find('.portfolio_item_dscr').slideUp(350); //.fadeOut(205)
-      }
-  );
-
+  
   $('.team-box').owlCarousel({
     loop:true,
     dotsEach: true,

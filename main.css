@@ -339,7 +339,6 @@ footer{
 }
 
 .portfolio_item_dscr {
-  display: none;
   position:absolute;
   top:0;
   left:0;
@@ -349,6 +348,10 @@ footer{
   padding: 6em 0;
   text-align:center;
   z-index:99;
+  opacity: 0;
+}
+.portfolio_item:hover .portfolio_item_dscr {
+  opacity: 1;
 }
 
              /*team*/
@@ -495,7 +498,12 @@ footer{
   padding-bottom: 14px;
   resize: none;
 }
-
+address a,
+address a:focus,
+address a:hover {
+  color: #000000;
+  text-decoration: none;
+}
           /*media*/
 @media (max-width: 1199px) {
   .masthead_inner,
