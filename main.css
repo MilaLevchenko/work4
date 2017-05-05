@@ -306,39 +306,6 @@ body {
   margin: 2em;
 }
 
-          /*footer*/
-footer{
-  width: 100%;
-  background-color: #000000;
-  padding: 1em 0 2em;
-}
-.footer_inner{
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-}
-.social_icon{
-  text-align: center;
-}
-.social [class*=icon-]  {
-  transition: color .3s linear;
-}
-.icon-vk:hover {
-  color: #2a6496;
-}
-.icon-gh:hover {
-  color: #914896;
-}
-.icon-bb:hover {
-  color: #629637;
-}
-.icon-f:hover {
-  color: #362796;
-}
-footer p {
-  margin: .8em 0 0;
-}
 
           /*portfolio*/
 .portfolio_group{
@@ -532,6 +499,41 @@ address a:hover {
   color: #000000;
   text-decoration: none;
 }
+
+/*footer*/
+footer{
+  width: 100%;
+  background-color: #000000;
+  padding: 1em 0 2em;
+}
+.footer_inner{
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+.social_icon{
+  text-align: center;
+}
+.social [class*=icon-]  {
+  transition: color .3s linear;
+}
+.icon-vk:hover {
+  color: #2a6496;
+}
+.icon-gh:hover {
+  color: #914896;
+}
+.icon-bb:hover {
+  color: #629637;
+}
+.icon-f:hover {
+  color: #362796;
+}
+footer p {
+  margin: .8em 0 0;
+}
+
 .toTop{
   position: fixed;
   bottom: 2em;
